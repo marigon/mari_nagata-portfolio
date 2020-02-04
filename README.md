@@ -1,1 +1,0 @@
-# mari_nagata-portfolio
