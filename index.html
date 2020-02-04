@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>mari nagata Portfolio</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Nunito:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header-title">
+        <span class="screen-reader-text">mari nagata portfolio</span>
+        <a href="index.html#home"><img src="./img/home-logo.svg" alt="mari nagata portfolio"></a>
+    </h1>
+
+    <nav class="gnav">
+      <div class="gnav__wrap">
+        <h2 class="screen-reader-text">サイト内メニュー</h2>
+        <ul class="gnav__text">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#works">WORKS</a></li>
+          <li class="nav_small"><a href="work-light-lounge.html">Light Lounge</a></li>
+          <li class="nav_small"><a href="work-gelateria-mako.html">Gelateria MAKO</a></li>
+          <li class="nav_small"><a href="#coding-practice">CODING</a></li>
+          <li class="nav_small"><a href="#other-works">OTHER</a></li>
+          <li><a href="about-me.html">ABOUT ME</a></li>
+        </ul>
+        <ul class="gnav__icon">
+          <li><a href="https://twitter.com/mmmmmari22" target="_blank"><img src="./img/icon-twitter.png" alt="twitter"></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <button class="btn__trigger">
+      <span class="btn-bar">
+        <span class="screen-reader-text">メニューを開く</span>
+      </span>
+    </button>
+  </header>
+
+
+  <!-- hero section -->
+  <div class="hero container" id="home">
+    <h1 class="hero__logo">
+      <img src="./img/hero-logo.svg" alt="mari nagata">
+    </h1>
+
+    <a class="aboutme-btn" href="about-me.html">&ensp;about me&ensp;&gt;</a>
+
+    <div class="arrow">
+      <img src="./img/arrow.png" alt="↓">
+    </div>
+  </div>
+
+  <section>
+    <div class="container index-me">
+      <h2><img src="./img/home-logo.svg" alt="ma!">「まぁ！」と思わせるような<br class="index-me__br">幸せな価値観を届けたい。</h2>
+      <div class="index-me-flex">
+        <figure class="index-me-profile"><img src="./img/profile.jpg" alt="ながた　まり"></figure>
+        <div class="index-me-text">
+          <p>私は人の幸せを作るのが好きです。</p>
+          <p>「まあっ！<img class="index-me-ma" src="./img/home-logo.svg" alt="ma!">」と驚くほどの幸せな価値観を、デザインを通して世の中に届けるために。</p>
+          <p>私の「課題発見力<img class="index-me-a" src="./img/icon-a.svg" alt="虫眼鏡">」を活かして、誰かにとっての幸せな人生の分岐点に関わりたいと思っています。</p>
+        </div>
+      </div>
+      <!-- <button class="aboutme-btn">
+        <a href="#aboutme">&ensp;about me&ensp;&gt;</a>
+      </button> -->
+      <!-- <div class="twitter-icon">
+        <a href="https://twitter.com/mmmmmari22"><img src="./img/icon-twitter.png" alt="twitter"></a>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- works section -->
+  <section id="works">
+    <div class="container works">
+      <h2 class="section-title">FEATURED WORKS</h2>
+      <div class="link-wrap">
+        <div class="link link-big">
+          <a href="work-light-lounge.html">
+            <div class="link-img-wrap">
+              <img class="link-img" src="./img/link-light.jpg" alt="Light Lounge">
+            </div>
+            <div class="link-btm">
+              <div class="link-textbox">
+                <p class="link-text">コワーキングスペースwebサイト</p>
+                <h3 class="link-title">Light Lounge</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="link link-big">
+          <a href="work-gelateria-mako.html">
+            <div class="link-img-wrap">
+              <img class="link-img" src="./img/link-gelateria.jpg" alt="Gelateria MAKO">
+            </div>
+            <div class="link-btm">
+              <div class="link-textbox">
+                <p class="link-text">ジェラート専門店webサイト</p>
+                <h3 class="link-title">Gelateria MAKO</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container works" id="coding-practice">
+      <h2 class="section-title">CODING PRACTICE</h2>
+      <div class="link-wrap">
+        <div class="link link-small">
+          <a href="https://marigon.github.io/JUICY-K.-BURGER/" target="_blank">
+            <div class="link-img-wrap">
+              <img class="link-img" src="./img/link-burg.jpg" alt="アクセシビリティを意識したモバイルファーストでの記述練習">
+            </div>
+            <div class="link-btm">
+              <div class="link-textbox">
+                <h3 class="link-text">アクセシビリティを意識した <br>
+                  モバイルファーストでの記述練習</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="link link-small">
+          <a href="https://marigon.github.io/ABC-CAFE/" target="_blank">
+            <div class="link-img-wrap">
+              <img class="link-img" src="./img/link-abccafe.jpg" alt="コンタクトフォームのある複数ページ作成の練習">
+            </div>
+            <div class="link-btm">
+              <div class="link-textbox">
+                <h3 class="link-text">コンタクトフォームのある<br>
+                  複数ページ作成の練習</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="other-works">
+    <div class="container works">
+      <h2 class="section-title">OTHER WORKS</h2>
+      <div class="link-wrap">
+        <div class="link link-small">
+          <a href="work-tech-junior.html">
+            <div class="link-img-wrap">
+              <img class="link-img" src="./img/link-junior.jpg" alt="子供向けプログラミング教室　ロゴ">
+            </div>
+            <div class="link-btm">
+              <div class="link-textbox">
+                <p class="link-text">子供向けプログラミング教室　ロゴ</p>
+                <h3 class="link-title">TECH::JUNIOR</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="link link-small">
+          <a href="work-tech-camp.html">
+            <div class="link-img-wrap">
+              <img class="link-img" src="./img/link-camp.jpg" alt="プログラミング教室説明会　バナー">
+            </div>
+            <div class="link-btm">
+              <div class="link-textbox">
+                <p class="link-text">プログラミング教室説明会　バナー</p>
+                <h3 class="link-title">TECH::CAMP</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="link link-small">
+          <a href="work-light-lounge-logo.html">
+            <div class="link-img-wrap">
+              <img class="link-img" src="./img/link-lightlogo.jpg" alt="Light Lounge">
+            </div>
+            <div class="link-btm">
+              <div class="link-textbox">
+                <p class="link-text">コワーキングスペース　サービスロゴ</p>
+                <h3 class="link-title">Light Lounge</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="container footer">
+    <a class="aboutme-btn" href="about-me.html">&ensp;about me&ensp;&gt;</a>
+    <div class="twitter-icon">
+      <a href="https://twitter.com/mmmmmari22"><img src="./img/icon-twitter.png" alt="twitter"></a>
+    </div>
+    <p>Thank you for watching.</p>
+    <p>Please look forward to more !</p>
+    <img class="footer-logo" src="./img/hero-logo.svg" alt="mari nagata">
+    <small>&copy;2020 mari nagata.</small>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

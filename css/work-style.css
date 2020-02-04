@@ -1,0 +1,440 @@
+
+/* work 共通
+-------------------------------------------------*/
+section{
+  margin-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+h2{
+  font-size: 2.0rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+h3{
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+.flex-sp{
+  display: flex;
+}
+/* hero---------- */
+.hero-work{
+  width: 100%;
+  margin-top: 71px;
+  height: 139px;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+.hero-work-text{
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+  color: #fff;
+}
+.hero-work-text p{
+  font-size: 1.2rem;
+}
+.hero-work-text h1{
+  font-size: 2.0rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+
+/* about section--------- */
+
+.bg-white{
+  background-color: #fff;
+}
+.about p, a{
+  font-weight: bold;
+  margin-top: 10px;
+}
+.about h4{
+  font-weight: normal;
+  margin-top: 30px;
+}
+.site-url{
+  text-decoration: underline;
+}
+
+/* product--------------------- */
+.product{
+  padding-top: 0;
+}
+.product-mock{
+margin: 0 auto 56px;
+}
+.screen{
+  width: 84%;
+  border: 1px solid #342A21;
+  margin: 0 auto 20px;
+}
+
+
+/* hearing --------------- */
+.hearing p{
+  margin-top: 10px;
+}
+.hearing h4{
+  margin-top: 30px;
+}
+
+
+/* process----------------- */
+.process{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* concept----------------- */
+.concept-item{
+  margin-top: 40px;
+}
+.concept-item img{
+  margin: 0 auto;
+  display: block;
+}
+
+.concept-key{
+  margin-top: 40px;
+  font-size: 1.6rem;
+}
+.concept-key p{
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: table;
+  padding: 10px;
+  font-weight: bold;
+}
+.bg-y{
+  background-color: #FFF9A5;
+}
+.rotate-90{
+  transform: rotate(90deg);
+}
+.concept-word{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2.0;
+}
+
+/* design---------------- */
+.design-text{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.design-text li{
+  margin-bottom: 20px;
+}
+.design-left{
+  margin-bottom: 20px;
+}
+.design-img{
+margin-bottom: 30px;
+}
+.design-img:last-child{
+margin-bottom: 0px;
+}
+.design-img-small{
+  margin-bottom: 30px;
+}
+.design-item{
+  margin-top: 30px;
+}
+
+
+
+/* タブレット --------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:768px){
+body{
+  font-size: 1.6rem;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.flex__left{
+  width: 48%;
+}
+.flex__right{
+  width: 48%;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-work{
+  height: 300px;
+}
+.hero-work-text {
+    left: 40px;
+}
+.hero-work-text p {
+    font-size: 1.6rem;
+}
+.hero-work-text h1 {
+    font-size: 3.6rem;
+}
+.product-screen{
+  justify-content: space-around;
+}
+.screen{
+  width: 40%;
+}
+.concept-word {
+    font-size: 1.8rem;
+}
+
+.design-img {
+    width: 48%;
+}
+.design-text{
+  margin-top: 0px;
+  margin-bottom: 80px;
+}
+
+}
+
+/* PC ---------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:1024px){
+  section{
+  margin-top: 80px;
+}
+  h2{
+  font-size: 2.4rem;
+}
+h3{
+  font-size: 2.0rem;
+  margin-top: 60px;
+}
+.hero-work{
+  margin-top: 80px;
+  height: 400px;
+}
+.hero-work-text {
+  left: 80px;
+}
+.hero-work-text h1 {
+    font-size: 4.8rem;
+}
+.product-mock{
+  max-width: 1010px;
+}
+.process{
+  max-width: 950px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.concept-word {
+    font-size: 1.8rem;
+}
+.design-img {
+    width: 48%;
+}
+.design-text{
+  margin-top: 0px;
+  margin-bottom: 80px;
+}
+.design-text li{
+  margin-bottom: 30px;
+}
+}
+
+
+
+
+
+
+
+/* light lounge
+--------------------------------------------------- */
+
+.hero-work-light{
+  background-image: url(../img/hero-light.png);
+}
+
+.light-slide{
+  width: 335px;
+  height: 250px;
+}
+.light-slide-wrap{
+  text-align: center;
+}
+.light-site-logo{
+  padding-bottom: 0;
+}
+.light-site-logo-about{
+  margin-top: 30px;
+}
+.link-title{
+  margin: 0;
+}
+
+.light-color-02{
+  max-width: 210px;
+  margin-top: 20px;
+}
+
+
+/* タブレット */
+@media screen and (min-width:768px){
+.light-slide{
+  width: 570px;
+  height: 400px;
+}
+}
+
+/* PC */
+@media screen and (min-width:1024px){
+  .light-slide{
+  width: 700px;
+  height: 420px;
+}
+}
+
+
+
+/* gelateria-------------------------------------------------------------- */
+.hero-work-gelateria{
+  background-image: url(../img/hero-gelateria.png);
+}
+.gelateria-concept img{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* タブレット */
+@media screen and (min-width:768px){
+.gelateria-concept .concept-pict-1{
+  max-width: 490px;
+}
+.gelateria-concept img{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.gelateria-design .design-screen{
+  display: block;
+  margin: 0 auto;
+}
+}
+
+
+/* PC */
+@media screen and (min-width:1024px){
+.gelateria-concept img{
+  width: 100%;
+  max-width: 490px;
+}
+.gelateria-design .design-screen{
+  width: 100%;
+  max-width: 490px;
+}
+}
+
+/* tech-junor------------------------------------------------------------- */
+.hero-work-junior{
+  background-image: url(../img/hero-junior.png);
+}
+.product-mock-junior {
+  margin: 0 auto 0;
+  max-width: 800px;
+}
+
+.junior-design-idea {
+  margin-top: 30px;
+}
+.junior-design .design-left {
+    margin-bottom: 0px;
+}
+.junior-design-idea img {
+  width: 94%;
+  display: block;
+  margin: 10px auto 10px;
+}
+.design-pict {
+    margin-top: 10px;
+}
+.mock-mobile{
+  width: 50%;
+  display: block;
+  margin: 10px auto 0;
+}
+
+/* タブレット */
+@media screen and (min-width:768px){
+  .junior-concept .concept-key {
+    margin-top: 0px;
+}
+}
+
+/* tech-camp----------------------------------------------------------------- */
+.hero-work-camp{
+  background-image: url(../img/hero-camp.png);
+}
+.product-mock-camp {
+    max-width: 300px;
+    margin: 0 auto;
+}
+.camp-design-1 {
+    width: 300px;
+}
+.camp-design-1 {
+    max-width: 468px;
+}
+.camp-design-3 {
+    width: 160px;
+    margin-top: 30px;
+}
+
+/* タブレット */
+@media screen and (min-width:768px){
+.camp-design-3 {
+}
+}
+
+/* light-lounge-logo-------------------------------------------------------------- */
+
+.hero-work-lightlogo{
+  background-image: url(../img/hero-lightlogo.png);
+}
+.product-mock-lightlogo{
+  max-width: 405px;
+  margin: 0 auto;
+}
+.light-logo-idea{
+  border: 1px solid #342A21;
+}
+.light-logo-idea-c{
+  border: 1px solid #342A21;
+  margin-top: 30px;
+}
+.design-lightlogo-weight{
+  margin-bottom: 30px;
+}
+
+/* タブレット */
+@media screen and (min-width:768px){
+.light-logo-idea-c{
+  margin-top: 0px;
+}
+}
+/* PC */
+@media screen and (min-width:1024px){
+.lightlogo-design-mock{
+  width: 1010px;
+  margin: 0 auto;
+}
+.design-lightlogo-weight{
+  width: 1010px;
+  display: block;
+  margin: 0 auto 60px;
+}
+}

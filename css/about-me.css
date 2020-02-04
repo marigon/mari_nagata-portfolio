@@ -1,0 +1,289 @@
+section{
+  margin-top: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+h2{
+  font-size: 2.0rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+h3{
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+h4{
+  margin-top: 30px;
+  font-size: 1.6rem;
+}
+h5{
+  margin-bottom: 10px;
+}
+.flex-sp{
+  display: flex;
+}
+.section-title {
+    margin-top: 40px;
+    text-align: center;
+}
+/* hero---------- */
+.hero-me{
+  width: 100%;
+  margin-top: 71px;
+  height: 139px;
+  background-size: cover;
+  background-color:#fff;
+  position: relative;
+}
+.hero-me-item{
+  width: 335px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform : translate(-50%,-50%);
+}
+
+.hero-me-item p{
+  font-size: 2.0rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  font-family: 'Nunito';
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+/* concept section--------- */
+.concept-me{
+  margin: 0 auto;
+}
+.concept-me h3 img{
+  width: 4.286em;
+  margin-bottom: 0.3em;
+}
+.concept-me-profile{
+  width: 240px;
+  margin: 0 auto;
+}
+.concept-me-top-text p, .concept-me-btm-text p{
+  margin-top: 20px;
+}
+.concept-me-btm{
+  margin-top: 60px;
+}
+.concept-me-profile-2{
+    width: 100px;
+  margin: 30px auto;
+}
+
+/* strength section---------- */
+.section-sub-title{
+  text-align: center;
+  margin-top: -30px;
+}
+.strength-item{
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.strength-item-img{
+  width: 31%;
+    margin: 0 auto;
+}
+.strength-item-text{
+  width: 60%;
+  margin: 0 auto;
+}
+.logical-text, .feeling-text{
+  font-weight: bold;
+  font-family: 'Nunito';
+  font-size: 2.0rem;
+  padding-top: 30px;
+}
+.logical{
+  background: rgba(150, 172, 183, 0.2);
+}
+.feeling{
+  background: rgba(255, 249, 165, 0.3);
+}
+
+/* profile section---------- */
+.profile p{
+  margin-top: 10px;
+}
+.profile-item{
+  margin-top: 40px;
+}
+.profile-1 img{
+  margin-bottom: 20px;
+}
+.profile-2 img{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.profile-4 img{
+  margin-bottom: 20px;
+}
+.profile-4{
+  margin-top: 20px;
+}
+
+
+
+
+/* タブレット --------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:768px){
+body{
+  font-size: 1.6rem;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.concept-me-title{
+    margin: 0 auto;
+    width: 98%;
+    text-align: center;
+}
+.concept-me-top{
+    margin: 0 auto;
+    width: 98%;
+  }
+.concept-me-profile{
+  width: 25%;
+  margin: 0 auto;
+}
+.concept-me-top-text{
+    width: 70%;
+  margin: 0 auto;
+}
+  .concept-me-btm {
+    margin: 10px auto 30px;
+    width: 98%;
+}
+.concept-me-btm-text{
+    width: 77%;
+  margin: 0 auto;
+}
+.concept-me-profile-2{
+    width: 18%;
+  margin: 0 auto;
+}
+
+/* strength----------------- */
+.strength-wrap{
+  align-items: stretch;
+}
+.logical{
+  width: 50%;
+}
+.feeling{
+  width: 50%;
+}
+.strength-item{
+  height: 340px;
+  position: relative;
+  align-items: flex-start;
+}
+.strength-item-img{
+  margin-top: 80px;
+}
+.logical-text{
+  text-align: right;
+  margin-right: 10px;
+}
+.logical-text, .feeling-text{
+
+  font-size: 2.6rem;
+  padding-top: 60px;
+}
+/* profile---------- */
+
+.profile-1 .concept-me-profile{
+  width: 30%;
+}
+.profile-1 .profile-text{
+  width: 65%;
+}
+.profile-2 .concept-me-profile{
+  width: 30%;
+  max-width: 240px;
+}
+.profile-2 .profile-text{
+  width: 65%;
+}
+.profile-4 .concept-me-profile{
+  width: 30%;
+  max-width: 240px;
+}
+.profile-4 img {
+    margin-bottom: 0px;
+}
+.profile-4 .profile-text{
+  width: 65%;
+}
+.profile-5{
+  margin-top: 25px;
+}
+.profile-item{
+  width: 86%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.profile-1{
+    width: 86%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.concept-me-profile{
+  margin-left: 0;
+}
+.profile-2 .concept-me-profile{
+  margin-right: 0;
+}
+.profile-6{
+  align-items: flex-start;
+}
+.skill-wrap{
+    width: 86%;
+    margin: 0 auto;
+}
+
+
+
+}
+/* PC ---------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:1024px){
+  section{
+  margin-top: 80px;
+}
+  h2{
+  font-size: 2.4rem;
+}
+h3{
+  font-size: 2.0rem;
+  margin-top: 60px;
+}
+.concept-me-title{
+    width: 98%;
+}
+.concept-me-top{
+    width: 78%;
+  }
+
+  .concept-me-btm {
+    width: 78%;
+}
+.profile-item{
+  width: 69%;
+}
+.profile-1{
+    width: 69%;
+}
+.skill-wrap{
+  width: 69%;
+}
+
+}

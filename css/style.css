@@ -1,0 +1,611 @@
+/*
+Base
+------------------------------- */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 62.5%;
+  font-family: 'Noto Sans JP', 游ゴシック, 'Yu Gothic', 游ゴシック体, YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Meiryo UI', メイリオ, Meiryo, sans-serif;
+  word-break: break-all;/*URLがページからはみ出さないようにする*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  letter-spacing: 0.05rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  height: 100%;
+  font-feature-settings: "palt";/*日本語のカーニングをしてくれる*/
+  color: #342A21;
+  background-color: #FFFDF9;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+a {
+  color: inherit;/*親要素に準ずる*/
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5,strong {
+  font-weight: bold;
+}
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+a:hover{
+    color: rgba(0, 0, 0, 0.25);
+}
+/*
+Common
+------------------------------- */
+
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+.section-title {
+    position: relative;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 2.0rem;
+    letter-spacing: 0.1rem;
+    margin-top: 140px;
+}
+.section-title::before{
+    position: absolute;
+    display: block;
+    height: 28px;
+    width: 30px;
+    top: -2em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../img/icon-a.svg);
+    background-size: contain;
+    content: "";
+}
+
+.container{
+    width: 89.33%;
+    margin: 0 auto;
+}
+body::before{
+    position: fixed;
+    height: 100%;
+    width: 10px;
+    top: 0;
+    left: 0;
+    background-color: #96ACB7;
+    content: "";
+    z-index: 999;
+}
+body::after{
+    position: fixed;
+    height: 100%;
+    width: 10px;
+    top: 0;
+    right: 0;
+    background-color: #FFF9A5;
+    content: "";
+    z-index: 999;
+}
+.bold{
+    font-weight: bold;
+}
+/*
+Styles
+------------------------------------------------------ */
+
+/* header --------------------------------*/
+.header {
+    height: 5em;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+
+.header-title {
+    width: 60px;
+    margin-left: 28px;
+    margin-top: 24px;
+}
+
+
+/* ハンバーガーメニュー */
+.gnav{
+    display: none;
+    width: 72vw;
+    height: 496px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    background-color: #FFF9A5;
+    border-radius: 30px 0 0 30px;
+}
+.gnav__wrap {
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    width: 70%;
+    height: 100%;
+}
+.gnav__text{
+    padding-top: 10px;
+}
+.gnav__text li{
+    font-size: 2.2rem;
+    margin-top: 0.7em;
+    font-family: 'Nunito';
+    font-weight: bold;
+}
+.nav_small{
+  margin-left: 1em;
+}
+.nav_small a{
+  font-weight: 400;
+  font-size: 2.0rem;
+}
+.gnav__icon{
+    margin-top: 1.6em;
+    width: 30px;
+}
+
+.btn__trigger{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 30px;
+    right: 10px;
+    width: 60px;
+    height: 30px;
+}
+
+.btn-bar{
+    width: 30px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #342A21;
+    display: inline-block;
+    position: absolute;
+    transition: all .3s ease-in-out;
+    top: 50%;
+    left: 50%;
+    transform : translate(-50%,-50%);
+}
+.btn-bar::after{
+    content: '';
+    display: inline-block;
+    background-color: #342A21;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10.81px;
+    transition: all .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.btn__trigger.close .btn-bar{
+    transform: translate(-15px,-8px) rotate(-45deg);
+    transition: transform .3s;
+}
+.btn__trigger.close .btn-bar::after{
+    transform: translate(0px,11px) rotate(90deg);
+    transition: transform .3s;
+}
+/* body.noscroll{
+    overflow: hidden;
+} */
+
+
+
+
+/* hero ------------------------------------*/
+
+.hero{
+    height: 100vh;
+    text-align: center;
+}
+.hero__logo{
+    width: 81.6vw;
+    padding-top: 40vh;
+    margin: 0 auto 10.94vh;
+}
+
+
+.arrow{
+  display:block;
+  width: 30px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+
+
+/* me------------------------------------ */
+.index-me{
+    margin: 8.714em auto 0;
+    text-align: center;
+}
+.index-me h2 img{
+    width: 4.286em;
+    margin-bottom: 0.4em;
+    margin-right: 0.5em;
+}
+.index-me h2{
+    font-size: 1.6rem;
+    line-height: 1.7;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto 1em;
+}
+.index-me-profile img{
+    margin: 0 auto;
+    display: block;
+    max-width: 240px;
+}
+.index-me-text p{
+    line-height: 1.7;
+    padding: 1em 0 0;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+.index-me-flex{
+    margin-bottom: 40px;
+}
+.index-me-ma, .index-me-a{
+    display: inline-block;
+    margin: 0.3em 0.6em 0.32em;
+}
+.index-me-ma{
+    width: 3.429em;
+}
+.index-me-a{
+    width: 1.4em;
+}
+
+.aboutme-btn {
+    color: #fff;
+    background: #342A21;
+    padding: 15px 40px;
+    display: inline-block;
+    font-family: 'Nunito';
+    font-size: 1.8rem;
+    letter-spacing: 0.12rem;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.aboutme-btn:hover{
+    opacity: 0.8;
+
+    color: rgba(255, 255, 255, 1);
+}
+.aboutme-btn:active {
+    transform: translateY(2.5px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* works ------------------------------------*/
+.works{
+    text-align: center;
+}
+
+.link {
+    width: 80%;
+    margin: 30px auto 40px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.link-img-wrap {
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+.link-img {
+	display: block;
+    transition-duration: 0.3s;
+    border-radius: 10px 10px 0 0;
+}
+.link-img:hover {
+	transform: scale(1.1);
+	transition-duration: 0.3s;
+}
+
+.link-btm{
+    position: relative;
+    padding: 30px 0;
+    background-color: #ffffff;
+    border-radius:0 0 10px 10px;
+}
+.link-textbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+.link-title {
+    font-size: 1.8rem;
+}
+.link-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+
+
+/* footer----------------------------------------- */
+.footer{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.twitter-icon a img{
+    width: 41px;
+    margin: 40px auto 40px;
+}
+.footer p{
+    color: #96ACB7;
+    font-family: 'Nunito';
+    font-size: 1.4rem;
+    letter-spacing: 0.15rem;
+}
+.footer-logo{
+    width: 61.33%;
+    max-width: 300px;
+    opacity: 0.5;
+    margin-top: 18px;
+    margin-bottom: 6.25px;
+}
+.footer small{
+    display: block;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* タブレット --------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:768px){
+
+/* common-- */
+
+.section-title {
+    font-size: 2.8rem;
+    margin-top: 130px;
+}
+.section-title::before{
+    top: -1.6em;
+}
+.container{
+width: 84.72%;
+}
+body::before{
+    width: 20px;
+}
+body::after{
+    width: 20px;
+}
+
+/*
+Styles
+------------------------------------------------------ */
+
+/* header --------------------------------*/
+
+.header-title {
+    width: 70px;
+    margin-left: 60px;
+}
+.gnav{
+    width: 50vw;
+}
+.btn__trigger{
+    top: 34px;
+    right: 45px;
+}
+
+/* hero ------------------------------------*/
+.aboutme-btn{
+    font-size: 2.2rem;
+}
+.arrow{
+    width: 50px;
+}
+
+/* works ------------------------------------*/
+
+.link-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.link {
+    margin: 60px auto 40px;
+}
+.link-big{
+    max-width: 300px;
+}
+.link-small{
+    max-width: 270px;
+}
+.link-title {
+    font-size: 2.0vw;
+}
+.link-text {
+    font-size: 1.6vw;
+}
+
+/* me------------------------------------ */
+.index-me-flex{
+    display: flex;
+    margin: 0 auto 80px;
+    width: 75%;
+}
+.index-me h2{
+    font-size: 2.0rem;
+    margin: 0 auto 50px;
+}
+.index-me h2 img{
+    margin-right: 1em;
+    margin-left: 1em;
+}
+.index-me-profile img{
+    max-width: 240px;
+    padding-top: 20px;
+}
+.index-me-text p{
+    margin-left: 50px;
+    padding-top: 20px;
+    width: 100%;
+}
+.index-me__br{
+    display: none;
+}
+
+/* footer----------------------------------------- */
+.footer{
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+.twitter-icon a img{
+    width: 40px;
+    margin: 40px auto 30px;
+}
+.footer p{
+    font-size: 2.4rem;
+}
+.footer-logo{
+    max-width: 380px;
+    margin-top: 40px;
+}
+
+}
+
+
+
+
+
+
+
+/* PC ---------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:1024px){
+.link-big{
+    max-width: 400px;
+}
+.link-small{
+    max-width: 350px;
+}
+.link-btm{
+    padding: 34px 0;
+}
+.link-title {
+    font-size: 1.35vw;
+}
+.link-text {
+    font-size: 1.0vw;
+}
+.link-wrap{
+    width: 84%;
+    margin: 0 auto;
+}
+
+/* common-- */
+.section-title {
+    font-size: 3.6rem;
+    margin-top: 218px;
+}
+.section-title::before{
+    height: 38px;
+    width: 40px;
+}
+.container{
+    width: 84.72%;
+}
+body::before{
+    width: 40px;
+}
+body::after{
+    width: 40px;
+}
+
+/* header --------------------------------*/
+
+.header-title {
+    width: 80px;
+    margin-left: 80px;
+}
+.gnav{
+    width: 40vw;
+    height: 505px;
+}
+.gnav__text li{
+    font-size: 2.4rem;
+    margin-top: 0.5em;
+}
+.nav_small a{
+  font-size: 2.0rem;
+}
+.btn__trigger{
+    top: 37px;
+    right: 78px;
+}
+
+/* index-me----------------------------- */
+.index-me h2{
+    font-size: 2.4rem;
+}
+.index-me-text p{
+    font-size: 1.6rem;
+    padding-top: 34px;
+
+}
+.index-me-profile img{
+    max-width: 250px;
+    padding-top: 24px;
+}
+/* footer----------------------- */
+.footer p{
+    font-size: 3.6rem;
+}
+.footer img{
+    max-width: 420px;
+    margin-top: 80px;
+}
+}
